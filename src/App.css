@@ -28,11 +28,105 @@
   color: #61dafb;
 }
 
+.Header-logo{
+  width: 50px;
+  height: 50px;
+}
+
+.Header-nav{
+  background: #46e6ff;
+}
+
+.Header-btn{
+  border: none;
+  background-color: #76edff;
+  border-radius: 5px;
+}
+.Header-btn:hover{
+  background: #92f1ff;
+  border: 1px solid;
+}
+.Header-color__mode__btn{
+  border: none;
+  background-color: #76edff;
+  border-radius: 5px;
+}
+
+.Main{
+  background-color: #76edff;
+  width: 40rem;
+  border-radius: 20px;
+}
+.Main-BT{
+  background-color: #fdb5a3;
+  width: 40rem;
+  border-radius: 20px;
+}
+
+.Main-Pomodoro_btn{
+  background-color: #52e8ff;
+}
+
+.Main-Pomodoro_btn:hover{
+  background-color: #5be9ff;
+}
+
+.Main-BT_btn{
+  background-color: #fc9d86;
+}
+.Main-BT_btn:hover{
+  background-color: #fdb5a3;
+}
+
+.Settings{
+  width: 30rem;
+  height: 30rem;
+  background-color: #00ddfff1;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  
+}
+
+.Settings-show{
+  animation: settings-show 1s ease-out forwards;
+}
+
+.Settings-hide{
+  animation: settings-hide 1s ease-in forwards;
+}
+
+.input-num{
+  width: 3.5rem;
+  padding: 1px 4px;
+}
+.input-number{
+  font-size: 1.2rem;
+}
+
+@keyframes settings-show{
+  from{top: -50%}
+  to{top: 50%}
+}
+
+@keyframes settings-hide{
+  from{top: 50%}
+  to{top: -50%}
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 578px) {
+  .Main{
+    width: 90%;
   }
 }

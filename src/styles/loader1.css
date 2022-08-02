@@ -1,0 +1,7 @@
+.timer-numbers{
+    font-size: 6rem;
+}
+.Timer-numbers__span{
+    display: inline-block;
+    width: 7.5rem;
+}
